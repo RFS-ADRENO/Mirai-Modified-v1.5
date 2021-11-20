@@ -2,7 +2,6 @@ const login = require("fca-xuyen-get");
 const { Sequelize, sequelize, Op } = require("./database");
 const logger = require("./app/modules/log.js");
 const fs = require("fs-extra");
-const getConfig = JSON.parse(fs.readFileSync('config.json'));
 const express = require("express");
 const app = express();
 const cmd = require('node-cmd');
@@ -34,6 +33,12 @@ const __GLOBAL = new Object({
 		custom: new Object()
 	})
 });
+
+//checkConfig
+if (!fs.existsSync('config.json')) return logger('Không tìm thấy file config!', 1);
+
+const getConfig = JSON.parse(fs.readFileSync('config.json'));
+logger("Load thành công file config", 0);
 
 //auto-clean && check
 var ytPath = './app/handle/media/';
@@ -81,6 +86,7 @@ if (getConfig.REFRESHING == 'on') setTimeout(() => {
 
 require('npmlog').pause();
 async function facebook({ Op, models }) {
+  	if (!fs.existsSync('appstate.json')) return logger("Không tìm thấy file appstate!", 1);
 	await login({appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8'))}, (err, api) => {
 		if (err) return logger(err, 2);
         api.setOptions({

@@ -1,7 +1,7 @@
 {
 	  "LANGUAGE": "vi",
 	  "BOT_NAME": "Bot",
-	  "ADMINS": ["100008907121641"],
+	  "ADMINS": [],
 	  "PREFIX": "/",
 	  "SELFLISTEN": false,
 	  "REFRESHING": "on",
