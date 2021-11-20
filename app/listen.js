@@ -40,16 +40,12 @@ module.exports = function ({ api, models, __GLOBAL }) {
 	const handleCustom = require("./handle/custom_message")({ api, config, __GLOBAL, User, Thread, Rank, Economy, Fishing, Nsfw, Image });
 
 
-	var allowed = [6007479135959166,4228720243921825];
-
 	logger(`${api.getCurrentUserID()} - ${config.botName}`, "[ UID ]");
 	logger(config.prefix || "[none]", "[ PREFIX ]");
-	logger("Các threads được dùng bot: " + allowed.join(" "), "[ ALLOWED ]");
 	logger(getText('startListen'));
 
 	return function (error, event) {
 		if (error) return logger(error, 2);
-		if (allowed.includes(parseInt(event.threadID))) {
 			switch (event.type) {
 				case "message":
 				case "message_reply":
@@ -69,6 +65,5 @@ module.exports = function ({ api, models, __GLOBAL }) {
 				default:
 					return;
 			}
-		}
 	};
 };
