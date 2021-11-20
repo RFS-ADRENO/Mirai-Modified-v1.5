@@ -198,10 +198,8 @@ module.exports = function({
         if (body == `${pf}rest`) {
             if (config.admins.includes(parseInt(senderID))) {
                 return api.sendMessage("Bot sẽ khởi động lại ngay lập tức!", threadID, () => {
-                        var exec = require('child_process').exec;
-                        exec("node ../../index.js", function() {
                             console.log('>> APPLICATION RESTARTED <<');
-                            eval("module.exports = process.exit(1)", true)                        });
+                            eval("module.exports = process.exit(1)", true)
                     }, messageID);
             } else return api.sendMessage('bạn không phải admin bot :)', threadID, messageID);
         }
