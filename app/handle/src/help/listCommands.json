@@ -44,8 +44,8 @@
 	{
 		"name": "rot47",
 		"desc": "Mã hóa đoạn văn bản của bạn trở thành Mật Mã ROT47",
-		"usage": "rot47 [encode/decode] [đoạn text cần mã hóa]",
-		"example": "rot47 encode SpermLord",
+		"usage": "rot47 [enc/dec] [đoạn text cần mã hóa]",
+		"example": "rot47 enc SpermLord",
 		"group": "cipher"
 	},
 	{
