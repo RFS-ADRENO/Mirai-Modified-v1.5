@@ -55,6 +55,7 @@ module.exports = function ({
         }
         break;
       case "log:unsubscribe":
+        if (event.logMessageData.leftParticipantFbId == api.getCurrentUserID()) return;
         if (event.author == event.logMessageData.leftParticipantFbId) {
           let db = fs.readFileSync(__dirname + '/src/antiout.json');
           db = JSON.parse(db);
