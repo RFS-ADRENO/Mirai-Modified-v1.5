@@ -1,0 +1,321 @@
+# Nếu bạn muốn xuống dòng, hãy dùng\n. VD: SpermLord\nCatalizcs.
+# Sau khi thay đổi, bạn phải khởi động lại bot để có hiệu lực.
+# Đặt kí tự # ở đầu mỗi câu nếu bạn không muốn code chạy những dòng đó.
+
+# Fishing.js
+fishing.trashes=Rác
+fishing.fish1=Cá cỡ bình thường
+fishing.fish2=Cá hiếm
+fishing.crabs=Cua
+fishing.blowfishes=Cá nóc
+fishing.crocodiles=Cá sấu
+fishing.whales=Cá voi
+fishing.dolphins=Cá heo
+fishing.squids=Mực ống
+fishing.sharks=Cá mập
+
+# NSFW.js
+nsfw.tier5=Bạn đã đang ở bậc 5.
+nsfw.notEnoughMoney=Bạn không có đủ tiền, bạn cần %1 đô nữa để mua cái này.
+nsfw.purchaseSuccess=Mua thành công cấp %1!
+
+# Thread.js
+thread.newThread=Nhóm mới
+thread.needAorO=Cần phải là 1 Mảng hoặc Đối tượng hoặc cả hai.
+thread.banThread=Cấm nhóm
+thread.unbanThread=Gỡ cấm nhóm
+
+# User.js
+user.newUser=Người dùng  mới
+user.needAorO=Cần phải là 1 Mảng hoặc Đối tượng hoặc cả hai.
+user.banUser=Người dùng bị cấm
+user.unbanUser=Người dùng bị bỏ cấm
+
+# index.js
+index.refresh=Làm mới sau 10 phút!
+index.connectSuccess=Đã kết nối với cơ sở dữ liệu thành công!
+index.connectFailed=Không thể kết nối với cơ sở dữ liệu!
+
+# login.js
+login.2fa=Nhập mã xác thực 2 bước:
+login.appstate=Đã tạo thành công appstate.
+login.err2FA=Tài khoản Facebook của bạn sử dụng xác thực hai yếu tố, để có thể đăng nhập, vui lòng sử dụng 'node login' in terminal/cmd!
+login.wrongAorP=Thông tin đăng nhập không chính xác!
+login.cantLogin=Đã xảy ra lỗi khi đăng nhập vào tài khoản của bạn!
+login.noFunc=Không thể tìm thấy bất kỳ chức năng nào!
+
+# listen.js
+listen.startEnv=Khởi tạo các biến môi trường ...
+listen.successEnv=Khởi tạo biến môi trường thành công!
+listen.startListen=Bắt đầu hoạt động!
+
+# event.js
+event.connectSuccess=Kết nối thành công vui lòng sử dụng %1help để xem toàn bộ lệnh của bot.
+event.welcome=Welcome aboard %1.\nChào mừng đến với %2.\nBạn là thành viên thứ %3 của nhóm 🥳
+event.left=%1 có vẻ chán nên đã rời khỏi nhóm 🥺
+event.kicked=%1 vừa bị đuổi 🤔
+
+# message.js
+message.error=Đã có lỗi xảy ra!
+message.notEnoughMoney=Bạn không đủ tiền.
+message.busy=%1 hiện tại đang bận!
+message.busyWithReason=%1 hiện tại đang bận với lý do: %2
+message.welcomeBack=Chào mừng bạn đã quay trở lại, %1!
+message.noAnswer=Không có câu trả lời nào.
+message.bannedCommand=Lệnh này đã bị cấm!
+message.noErrorInfo=Có vẻ như bạn chưa nhập thông tin, vui lòng nhập thông tin lỗi bạn gặp phải!
+message.reportInfo=Báo cáo từ %1\nGroup gặp lỗi: %2\nLỗi gặp phải: %3\nThời gian: %4
+message.reportSent=Thông tin lỗi của bạn đã được gửi về admin!
+message.alreadyOffNSFW=Nhóm này đã bị tắt NSFW từ trước!
+message.cantOffNSFW=Oops, không thể tắt NSFW ở nhóm này!
+message.disabledNSFW=Đã tắt NSFW thành công!
+message.alreadyOnNSFW=Nhóm này chưa bị tắt NSFW
+message.cantOnNSFW=Oops, không thể bật NSFW ở nhóm này!
+message.enabledNSFW=Đã bật NSFW thành công!
+message.helpInfo==== Thông tin lệnh bạn đang tìm ===\n- Tên lệnh: %1\n- Mô tả: %2\n- Cách dùng: %3\n- Hưỡng dẫn: %4
+message.adminHelpInvalid=Lệnh bạn nhập không hợp lệ, hãy gõ %1admin all để xem tất cả các lệnh có trong bot..
+message.adminSetting1=🛠 | Đây là toàn bộ cài đặt của bot | 🛠\n\n=== Quản Lý Cài Đặt ===\n[1] Prefix.\n[2] Tên bot.\n[3] Danh sách Admin.\n[4] Ngôn ngữ.\n[5] Tự khởi động lại.
+message.adminSetting2=\n=== Quản Lý Hoạt Động ===\n[6] Kiểm tra cập nhật.\n[7] Lấy danh sách người dùng bị cấm.\n[8] Lấy danh sách nhóm bị cấm.\n[9] Gửi thông báo tới tất cả các nhóm.\n[10] Tìm ID người dùng qua tên.\n[11] Tìm ID nhóm qua tên.\n[12] Áp dụng thay đổi.\n-> Để chọn, hãy reply tin nhắn này với số <-
+message.alreadyBannedUser=%1 - %2 đã bị cấm từ trước
+message.cantBanUser=Không thể cấm người này
+message.bannedUser=%1 - %2 đã bị cấm.
+message.notBannedUser=%1 - %2 chưa bị cấm trước đây.
+message.cantUnbanUser=Không thể bỏ cấm người dùng này
+message.unbannedUser=%1 - %2 đã được hủy cấm thành công
+message.bannedThread=Nhóm này đã bị cấm!
+message.cantBanThread=Không thể cấm nhóm này.
+message.alreadyBannedThread=Nhóm này đã bị cấm từ trước
+message.unbannedThread=Nhóm này đã được hủy cấm
+message.notBannedThread=Nhóm này không bị cấm trước đây.
+message.cantUnbanThread=Không thể gỡ cấm nhóm này
+message.enterBanCmd=Hãy nhập lệnh cần cấm.
+message.listBannedCmds=Đây là danh sách các lệnh hiện bị cấm trong nhóm này: %1
+message.cantFindCmd=Không thể cấm %1 bởi vì nó không tồn tại trong cmds.json.
+message.bannedCmd=Lệnh này đã bị cấm.
+message.enterUnbanCmd=Hãy nhập lệnh để hủy cấm
+message.notBannedCmd=Lệnh này chưa bị cấm trước đây.
+message.unbannedCmd=Lệnh này đã được bỏ cấm.
+message.alreadyOffResend=Nhóm này đã bị tắt Resend trước đây.
+message.cantOffResend=Oops, không thể tắt Resend trong nhóm này.
+message.disabledResend=Đã tắt Resend thành công!
+message.alreadyOnResend=Nhóm này chưa bị tắt Resend trước đây.
+message.cantOnResend=Oops, không thể bật Resend trong nhóm này.
+message.enabledResend=Đã bật Resend thành công!
+message.notUserID=Không phải là ID.
+message.addedUser=Đã thêm %1 vào database.
+message.alreadyInDB=%1 đã có trong database.
+message.restart=Bot sẽ khởi động lại ngay lập tức!
+message.cmdNotFound=Lệnh này không tồn tại.
+message.alreadyOffLUNoti=Nhóm này đã bị tắt thông báo nâng cấp trước đây.
+message.cantOffLUN=Oops, không thể tắt thông báo nâng cấp.
+message.disabledLUN=Đã tắt thông báo nâng cấp thành công!
+message.alreadyOnLUN=Nhóm này chưa bị tắt thông báo nâng cấp trước đây.
+message.cantOnLUN=Oops, không thể bật thông báo nâng cấp.
+message.enabledLUN=Đã bật thông báo nâng cấp thành công!
+message.helpMsg=Hiện tại có %1 các lệnh có thể được sử dụng trên bot này\n\n%2
+message.generalHelpInvalid=Lệnh bạn đã nhập không hợp lệ, hãy gõ %1help để xem tất cả các lệnh.
+message.requestAdd1=Thêm: %1
+message.requestAdd2=Người dùng có số ID: %1 thêm %2 vào request list.
+message.requestNotFound=Không thể tìm thấy %1
+message.requestDelete=Đã xóa: %1
+message.noRequest=Không có việc cần làm.
+message.allRequests=Đây là toàn bộ yêu cầu mà các bạn đã gửi:%1
+message.incorrectSyntax=Sai cú pháp, vui lòng tìm hiểu thêm tại %1help %2
+message.pwdNotFound=Không tìm thấy mật khẩu của %1 trong .env
+message.dieAPI=Key API của bạn không sử dụng được
+message.noVA=Không có kết quả với từ khóa đó.
+message.foundVA=Có %1 kết quả, chọn 1 trong những kết quả dưới đây:\n\n%2
+message.exceededLength=Đã vượt quá độ dài cho phép của %1, tối đa là 6 phút!
+message.allTags==== Tất cả các tag %1 ===\n%2
+message.invalidTag=Tag bạn đã nhập không hợp lệ. Nhập %1 để xem tất cả các thẻ.
+message.replyPic=Vui lòng bạn reply bức ảnh cần phải tìm!
+message.onePicOnly=Vui lòng reply chỉ một ảnh!
+message.noAPIKey=Chưa có api của %1.
+message.sauceResult=- Similarity: %1\n- Material: %2\n- Character: %3\n- Creator: %4\n- Site: %5
+message.noSauce=Không tìm thấy sauce của ảnh này.
+message.didntEnterShort=Bạn chưa nhập phím tắt để xóa.
+message.notExistsShort=Phím tắt này không tồn tại.
+message.deletedShort=Xóa phím tắt thành công!
+message.noShort=Không có phím tắt nào trong nhóm này.
+message.allShorts=Tất cả các phím tắt trong nhóm này:%1
+message.sameIO=Input và Output giống nhau.
+message.noIO=Bạn chưa nhập %1.
+message.createdShort=Tạo phím tắt thành công!
+message.dupShort=Phát hiện phím tắt đã tồn tại, tiến hành ghi trùng!
+message.sleepNow=Nếu bạn đi ngủ ngay bây giờ, thời gian tốt nhất để thức dậy là:\n%1
+message.sleep=Nếu bạn đi ngủ ở %1, thời điểm tốt nhất để thức dậy là:\n%2
+message.wake=Nếu bạn muốn thức dậy ở %1, thời gian tốt nhất để ngủ là:\n%2
+message.prefix=Prefix is: %1.
+message.credit=Project Mirai was created by:\nSpermLord: https://fb.me/MyNameIsSpermLord\nCatalizCS: https://fb.me/Cataliz2k
+message.simOn=Đã bật sim thành công.
+message.simOff=Đã tắt sim thành công.
+message.timeMin=%1 phút
+message.timeSec=%1 giây
+message.remindAfter=Tôi sẽ nhắc nhở bạn sau %1
+message.remindUser=Người lạ ơi
+message.remind=, hình như bạn đã nhờ tôi nhắc nhở bạn một việc phải không?
+message.isNaN=Nó không phải là một con số!
+message.lessThan=Phải ít hơn %1!
+message.ga=Yahoo %1, bạn giành được giveaway! Phần thưởng là "%2" 🥳🥳
+message.locatNotFound=Không tìm thấy %1.
+message.locatData=🌡 Nhiệt độ: %1℃\n🌡 Nhiệt độ cảm nhận: %2℃\n☁️ Bầu trời: %3\n💦 Độ ẩm: %4%\n💨 Tốc độ gió: %5km/h\n🌅 Mặt trời mọc lúc: %6\n🌄 Mặt trời lặn lúc: %7
+message.covid=* Thế giới\n- Nhiễm: %1\n- Tử vong: %2\n- Hồi phục: %3\n* Vietnam:\n- Nhiễm: %4\n- Tử vong: %5\n- Hồi phục: %6
+message.choose=Hmm, Em sẽ chọn giúp là: %1.
+message.waifu1=Em sẽ làm vợ anh ❤\n❤ Love you ❤
+message.waifu2=Không, chúng ta chỉ là bạn thôi.
+message.roll=UwU, con số đẹp nhất được chọn là: %1
+message.minGTEmax=Oops, số kết thúc của bạn lớn hơn hoặc bằng số bắt đầu.
+message.cantGetRank1=Bạn hiện không có trong cơ sở dữ liệu nên không thể thấy thứ hạng của mình, vui lòng thử lại sau 5 giây.
+message.cantGetRank2= hiện không có trong cơ sở dữ liệu nên bạn không thể thấy thứ hạng của họ.
+message.translate=Bản dịch: %1\nTừ %2 sang %3
+message.uptime=Bot đã hoạt động được %1 giờ %2 phút %3 giây.
+message.unsendErr1=Không thể gỡ tin nhắn của người dùng khác.
+message.unsendErr2=Phản hồi tin nhắn cần gỡ.
+message.wikiErr1=Nhập thứ cần tìm.
+message.wikiErr2=Không tìm thấy %1
+message.iss=Vị trí hiện tại của International Space Station 🌌🌠🌃\n- Vĩ độ: %1\n- Kinh độ: %2
+message.neo=Hiện tại đang có tổng cộng %1 vật thể đang ở gần trái đất ngay lúc này!
+message.spacex=Thông tin đợt phóng mới nhất của SpaceX:\n- Mission: %1\n- Năm phóng: %2\n- Thời gian phóng: %3\n- Tên lửa: %4\n- Link YouTube: %5
+message.afk=Bạn đã bật chế độ AFK
+message.afkWithReason=Bạn đã bật chế độ AFK với lý do: %1
+message.osuErr=Thiếu tên người dùng!
+message.didntUnderstand=Tôi không hiểu bạn nhập gì.
+message.mirai=Tôi tên là Mirai.
+message.created=Tôi được tạo bởi CatalizCS và SpermLord.
+message.notSupportXYz=Phương trình hóa học rút gọn hiện không được hỗ trợ. Chuyển (XY)z sang dạng XzYz.
+message.15secs==== Bạn có 15 giây để trả lời ===\n%1
+message.offNSFW=NSFW hiện đã bị vô hiệu hóa trong nhóm này.
+message.idealCode=Code lý tưởng là: %1
+message.cantFindHentai=Không tìm thấy truyện Hentai này.
+message.codeInfo=Tên: %1\nTác giả: %2\nNhân vật: %3\nTags: %4\nLiên kết: %5
+message.exceededNSFW=Bạn đã sử dụng hết %1 %2. Nâng cấp lên Bậc NSFW cao hơn hoặc đợi đến ngày mai.
+message.godmodeNSFW=Bạn đang ở God Mode!\nBạn sẽ không bị giới hạn khi sử dụng lệnh NSFW.
+message.myNSFW=Bậc NSFW của bạn là %1.\n%2porn sử dụng còn lại: %3\n%2hentai sử dụng còn lại: %4
+message.cantBuyNSFW=Bạn đang ở God Mode nên bạn sẽ không thể mua Bậc NSFW.
+message.nsfwTierLimit=Cấp độ NSFW không được dưới -1 và trên 5
+message.gmConfig=Bạn chưa bật NSFW God Mode trong config
+message.setNSFWMe=Bậc NSFW của bạn đã được đặt thành: %1.
+message.setNSFWUser=%1 bậc NSFW đã được đặt thành: %2
+message.setNSFWgm=Bạn đã bật God Mode cho %1! Bây giờ người này có thể sử dụng lệnh NSFW mà không có bất kỳ hạn chế nào!
+message.coinHead=Mặt ngửa!
+message.coinTail=Mặt up!
+message.moneyMe=Số dư hiện tại của bạn: %1 đô.
+message.moneyUser=%1 số dư hiện tại: %2 đô.
+message.receivedDaily=Bạn đã nhận được phần thưởng hôm nay, vui lòng quay lại sau: %1 giờ %2 phút %3 giây.
+message.daily=Bạn đã nhận được 300 đô, chúc may mắn <3
+message.worked=Hôm nay bạn đã làm việc, để tránh kiệt sức, vui lòng quay lại sau: %1 phút %2 giây.
+message.job1=bán vé số
+message.job2=đi sửa chữa xe
+message.job3=đi lập trình
+message.job4=hack Facebook
+message.job5=làm đầu bếp
+message.job6=làm thợ mộc
+message.job7=lái taxi
+message.job8=gangbang someone
+message.job9=làm thợ sửa ống nước ( ͡° ͜ʖ ͡°)
+message.job10=làm streamer
+message.job11=bán hàng online
+message.job12=làm nội trợ
+message.job13=bán hoa
+message.job14=tìm mã jav/hentai cho Quang Sáng
+message.job15=chơi Yasuo và gánh team của bạn
+message.work=Bạn %1 và nhận được %2 đô.
+message.betToLow=Đặt cược của bạn quá thấp, tối thiểu là 50 đô.
+message.roulWIn=Bạn đã chọn màu %1, bạn thắng bằng số tiền nhân với %2: %3 đô.
+message.roulLose=Đó là %1.\nBạn thua và mất trắng số tiền đã cược
+message.slotWon=%1 | %2 | %3\nBạn đã thắng! Bạn đã nhận được %4 đô.
+message.slotLose=%1 | %2 | %3\nBạn đã thua! %4 đã biến mất.
+message.pay=Bạn đã chuyển %1 đô cho %2.
+message.payToLow=Số tiền chuyển của bạn quá thấp, tối thiểu là 50 đô.
+message.setMeMoney=Đã thay đổi số dư của bạn thành: %1 đô.
+message.setUserMoney=Đã thay đổi số dư của %1 thành %2 đô.
+message.stealCooldown=Bạn vừa ăn trộm, để không bị cảnh sát bắt, vui lòng quay lại sau %1 phút %2 giây.
+message.stealFailed1=Rất tiếc, bạn không thể ăn cắp từ người này. Vui lòng thử lại.
+message.stealPoorUser=Bạn vừa ăn cắp từ một người nghèo. Vì vậy, bạn không có gì.
+message.steal1=Bạn vừa lấy trộm %1 đô từ một người trong nhóm này.
+message.steal2=Bạn vừa ăn cắp tất cả số dư của một người trong nhóm này.
+message.needMoney=Bạn không có tiền, HÃY LÀM VIỆC ĐỂ CÓ ĐƯỢC MỘT SỐ TIỀN LÀM VỐN.
+message.stealFailed2=Bạn đã bị bắt và mất %1 đô.
+message.congratHero=Xin chúc mừng %1! Bạn đã bắt được %2 và nhận được %3 đô làm phần thưởng!
+message.noRod=Có vẻ bạn chưa có cần câu để câu cá, bạn hãy mua trong shop!
+message.limitFishTime=Chỉ câu cá mỗi %1 giây một lần.
+message.brokenRod=Cần câu cá của bạn dường như đã bị hỏng, hãy sửa nó trong shop.
+message.defeatMonster==== Ôi không, bạn gặp phải con quái vật của hồ này và có độ khó %1, bạn có 15 giây trả lời câu hỏi để hạ gục con quái vật này ===\n%2
+message.caught=Bạn đã bắt được một %1 😮
+message.inv1==== Túi của bạn ===\n- Cấp cần câu: %1 (Độ bền: %2/%3)\n- Exp hiện tại: %4/%5\n
+message.inv2=- Tất cả các mặt hàng:\n+ Rác: %1\n+ Cá bình thường: %2\n+ Cá hiếm: %3\n+ Cua: %4\n+ Cá nóc: %5\n+ Cá sấu: %6\n+ Cá voi: %7\n+ Cá heo: %8\n+ Mực: %9\n+ Cá mập: %10\n
+message.inv3=- Tổng số tiền bạn có thể nhận được sau khi bán tất cả các mặt hàng: %1 đô.
+message.noSellItem=Nhập mặt hàng bạn muốn bán.
+message.sellItem=Bạn đã bán %1 %2 và nhận được %3 đô la.
+message.sellAllItems=Bạn sẽ nhận được %1 đô la sau khi bán tất cả các mặt hàng trong kho của bạn. Bạn có muốn tiếp tục không?\n=== Like tin nhắn này để bán tất cả hoặc dislike để hủy ===
+message.itemList==== Danh sách tiền của mọi loại cá ===\n1/ Rác: 1 đô\n2/ Cá bình thường: 30 đô\n3/ Cá hiếm: 100 đô\n4/ Cua: 250 đô\n5/ Cá nóc: 300 đô\n6/ Cá sấu: 500 đô\n7/ Cá voi: 750 đô\n8/ Cá heo: 750 đô\n9/ Mực: 1000 đô\n10/ Cá mập: 1000 đô
+message.stealFishCooldown=Bạn vừa ăn trộm, để tránh mất tất cả vật phẩm của mình, vui lòng quay lại sau: %1 phút %2 giây.
+message.intendSteal=Bạn định ăn cắp một %1, nhưng nạn nhân dường như chưa bắt được.
+message.stealFish=Bạn vừa trộm được một %1.
+message.stealFishFailed1=Người bạn định trộm đã khóa cửa rất cẩn thận, bạn đã không thể trộm được gì.
+message.stealFishFailed2=Bạn đã bị bắt và mất tất cả các mặt hàng trong kho của bạn.
+message.fishingShop=>> Cửa hàng câu cá <<\n---------------------\n[1] Nâng cấp cần câu\n[2] Sửa chữa cần câu\n[3] Mua cần câu mới\n[4] Mua mồi nhử\n[5] Nâng cấp mồi nhử
+message.cmdNotFound=Lệnh bạn đã nhập không tồn tại. Ý bạn là %1, phải không?
+message.keyboardHero=, cấp độ anh hùng bàn phím của bạn đã đạt đến cấp độ %1!
+
+# message_reply.js
+reply.askToChangePrefix=Prefix hiện tại %1\n=== Để thay đổi, hãy trả lời tin nhắn này với prefix bạn muốn đổi thành ===
+reply.askToChangeName=Tên bot hiện tại: %1\n=== Để thay đổi, hãy trả lời tin nhắn này với tên bạn muốn đổi thành ===
+reply.askToChangeAdmins=Admin hiện tại của bot: %1\n=== Để thay đổi, hãy trả lời tin nhắn này với ID của admin bạn chọn. VD: uid1_uid2_... ===
+reply.askToChangeLang=Ngôn ngữ hiện tại của bot: %1\n=== Để thay đổi, hãy trả lời tin nhắn này với ngôn ngữ bạn muốn đổi thành Vd: vi/en ===
+reply.askToChangeAutoRestart=Trạng thái tự động khởi động lại: %1\n=== Để thay đổi, hãy trả lời tin nhắn này với tính năng on/off mà bạn muốn thay đổi thành ===
+reply.newUpdate=Có bản cập nhật mới! Mở terminal/cmd và gõ "node update" để cập nhật!
+reply.noNewUpdate=Bạn đang sử dụng phiên bản mới nhất!
+reply.cantCheckUpdate=Không thể kiểm tra cập nhật. Vui lòng thử lại sau.
+reply.bannedUsers=Những người dùng bị cấm:%1
+reply.noBannedUser=Chưa có người dùng nào bị bạn cấm!
+reply.bannedThreads=Cấm nhóm:%1
+reply.noBannedThread=Chưa có nhóm nào bị bạn cấm!
+reply.sendNoti=Nhập tin nhắn bạn muốn gửi.
+reply.searchUser=Nhập tên người dùng bạn cần tìm kiếm.
+reply.searchThread=Nhập tên nhóm bạn cần tìm kiếm.
+reply.restart=Đang áp dụng các thay đổi ... Vui lòng đợi một lát để bot khởi động lại!
+reply.soHigh=Hình như bạn vừa hút cỏ?
+reply.changedPrefix=Đã thay đổi prefix bot thành: %1
+reply.changedName=Đã đổi tên bot thành: %1
+reply.changedLang=Đã đổi ngôn ngữ bot thành: %1
+reply.changedAdmins=Đã thay đổi admin bot thành: %1
+reply.onlyOnOff=Chỉ on/off
+reply.same=Cấu hình của bạn giống như trước đây.
+reply.changedAutoRestart=Đã thay đổi tự động khởi động lại thành: %1
+reply.sentNoti=Đã gửi thông báo với nội dung: %1
+reply.foundUsers=Đã tìm thấy %1 người dùng:%2
+reply.notFoundUser=Không tìm thấy bất kỳ người dùng nào có tên này: %1
+reply.foundThreads=Đã tìm thấy %1 nhóm:%2
+reply.notFoundThread=Không có nhóm nào có tên này:%1
+reply.outOfTime=Bạn đã hết thời gian để trả lời câu hỏi này!
+reply.correctAns=Bing bong, kết quả của bạn là hoàn toàn chính xác! Bạn đã trả lời câu hỏi này trong vòng %1 giây.
+reply.wrongAnsMath=Bạn đã trả lời sai câu hỏi này, đáp án đúng là: %1
+reply.upgradeRod=Bạn cần %1 exp và %2 đô để nâng cấp lên %3\nReaction 👍 để đồng ý hoặc chọn bất kỳ cái khác để hủy.
+reply.fixRod=Để sửa chữa cần câu này, bạn cần %1 đô, bạn có đồng ý không?\nReaction 👍 để đồng ý hoặc chọn bất kỳ cái khác để hủy.
+reply.buyRod=Để mua cần câu loại 1, bạn cần ít nhất 1000 đô, bạn có đồng ý không?\nReaction 👍 để đồng ý hoặc chọn bất kỳ cái khác để hủy.
+reply.comingSoon=Sắp ra mắt
+reply.outOfTime2=Bạn đã hết thời gian cho phép để trả lời câu hỏi này và %1 đã %2 bị cướp.
+reply.wrongAnsFish=Bạn đã trả lời sai câu hỏi này và %1 đã %2 bị cướp mất.
+reply.defeatMonster=Bing bong, kết quả của bạn là hoàn toàn chính xác và con quái vật bị đánh bại. Phần thưởng của bạn là:\n- %1 %2\n- Exp: %3\n\nBạn đã trả lời câu hỏi này trong vòng %4 giây.
+reply.chooseVA=Chọn từ 1 đến 5.
+reply.processVA=%1 đang được xử lý, thời lượng %1 dài có thể mất vài giây.
+reply.exceededLength=%1 độ dài vượt quá cho phép, tối đa 6 phút!
+
+# message_reaction.js
+reaction.soldAll=Bạn đã bán hết tất cả các mặt hàng trong kho của mình và nhận được %1 đô.
+reaction.canceledSP=Bạn đã hủy lần giao dịch này.
+reaction.canceledUpgrade=Bạn đã hủy lần nâng cấp này.
+reaction.notEnoughMoney=Bạn không đủ điều kiện, bạn vẫn thiếu %1 đô.
+reaction.notEnoughExp=Bạn không đủ điều kiện, bạn vẫn thiếu %1 exp.
+reaction.dontHaveRodToUpgrade=Bạn chưa có cần câu để nâng cấp, hãy mua cần câu mới tại shop!
+reaction.alreadyMax=Cần câu cá của bạn đã được nâng cấp tối đa trước đó!
+reaction.upgradeSuccess=Cần câu của bạn đã được nâng cấp thành công!
+reaction.canceledRepair=Bạn đã hủy lần sửa chữa này.
+reaction.repairSuccess=Cần câu cá của bạn đã được sửa chữa thành công!
+reaction.alreadyHave=Bạn đã có một chiếc cần câu cá!
+reaction.buyFirstRod=Bạn đã mua thành công một chiếc cần câu mới. Đây là bước đầu tiên trên con đường trở thành ngư dân giỏi nhất ở đây!\nChúc bạn may mắn ♥
+
+# unsend.js
+unsend.unsent= vừa gỡ một tin nhắn:\n%1
+unsend.unsentAttachment= vừa gỡ một tin nhắn 👀

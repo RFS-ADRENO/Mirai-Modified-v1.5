@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<meta charset="utf-8">
+	<meta name="author" content="Juraj Novák">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+	<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+	<title>Project Mirai DB Viewer</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/select2.css" rel="stylesheet">
+	<link href="css/select2-bootstrap.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/ribbons.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="main-container" class="container">
+	<div id="header">
+		<div class="row">
+			<div class="col-xs-6">
+				<h3>Project Mirai DB Viewer</h3>
+			</div>
+		</div>
+	</div>
+	<div id="compat-error" class="alert alert-danger" style="display: none">
+		<div class="clearfix">
+			<p>Trình duyệt của bạn không hỗ trợ các tính năng của HTML5, vui lòng chuyển sang Chrome hoặc Firefox.</p>
+		</div>
+	</div>
+
+	<div class="panel panel-info" id="dropzone" onclick="loadDB()">
+		<div id="drop-text" class="panel-body">
+			Nhấn vào đây để mở file <b>data.sqlite</b>
+		</div>
+		<div id="drop-loading" class="panel-body" style="display: none">
+			<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> <b>Đang xử lý...</b>
+		</div>
+	</div>
+
+	<div id="output-box" class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<select id="tables" class="form-control select2" title="Table"></select><br/>
+			</div>
+			<div class="col-md-11">
+				<div id="sql-editor" class="panel panel-default form-control"></div>
+			</div>
+			<div class="col-sm-1">
+				<button class="btn btn-sm btn-primary" id="sql-run" type="submit" onclick="executeSql(this)">Thực thi</button>
+			</div>
+			<div class="col-md-12">
+				<div style="overflow-x: auto">
+					<table id="data" class="table table-condensed table-bordered table-hover table-striped">
+						<thead>
+						<tr></tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+				<div class="alert alert-danger box" id="error" style="display: none"></div>
+			</div>
+		</div>
+	</div>
+	<div class="alert alert-danger box" style="display: none"></div>
+	<div class="alert alert-warning box" style="display: none"></div>
+	<div class="alert alert-info box" style="display: none"></div>
+</div>
+
+<div id="bottom-bar" class="text-center">
+	<div class="inline">
+		<button class="btn btn-default btn-sm " id="page-prev" type="submit" onclick="setPage(this, false)"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+		<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" onclick="setPage(this)" id="pager"></a>
+		<button class="btn btn-default btn-sm " id="page-next" type="submit" onclick="setPage(this, true)"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+	</div>
+</div>
+
+<div class="container">
+	<footer>
+		&copy; 2015, Juraj Novák, <a href="http://inloop.eu/" target="_blank">inloop.eu</a><br>
+		Thanks InLoopX for the source code.<br>
+		Under the Project Mirai by SpermLord and Catalizcs
+	</footer>
+</div>
+
+<div class="ribbon right grey hidden-xs">
+	<a href="https://github.com/inloop/sqlite-viewer">Original on GitHub</a>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/sql.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/ace/ace.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mindmup-editabletable.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

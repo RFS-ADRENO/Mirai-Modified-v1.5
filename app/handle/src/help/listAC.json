@@ -1,0 +1,68 @@
+[
+	{
+		"name": "banUser",
+		"desc": "Cấm người dùng sử dụng bot",
+		"usage": "admin banUser [@user/userID]",
+		"example": "admin banUser @mirai-chan"
+	},
+	{
+		"name": "banThread",
+		"desc": "Cấm nhóm chat sử dụng bot",
+		"usage": "admin banThread [threadID/để trống]",
+		"example": "admin banThread"
+	},
+	{
+		"name": "banCmd",
+		"desc": "Cấm người dùng sử lệnh đấy trong nhóm chat",
+		"usage": "admin banCmd [lệnh] | list lệnh có thể xem tại help",
+		"example": "admin banCmd say"
+	},
+	{
+		"name": "unbanUser",
+		"desc": "Cho phép người dùng có thể sử dụng bot",
+		"usage": "admin unbanUser [@user/userID]",
+		"example": "admin unbanUser @mirai-chan"
+	},
+	{
+		"name": "unbanThread",
+		"desc": "Cho phép nhóm chat có thể sử dụng bot",
+		"usage": "admin unbanThread [threadID/để trống]",
+		"example": "admin banThread"
+	},
+	{
+		"name": "unbanCmd",
+		"desc": "Gỡ cấm lệnh đã bị ban trong nhóm chat",
+		"usage": "admin unbanCmd [lệnh]",
+		"example": "admin unbanCmd say"
+	},
+	{
+		"name": "nsfw",
+		"desc": "Bật/Tắt toàn bộ hentai, porn trong nhóm chat",
+		"usage": "nsfw [on/off]",
+		"example": "nsfw off"
+	},
+	{
+		"name": "restart",
+		"desc": "Khởi động lại bot",
+		"usage": "restart",
+		"example": "admin restart"
+	},
+	{
+		"name": "setnsfw",
+		"desc": "Đặt thông số nsfw cho chính bản thân hoặc người được chọn",
+		"usage": "setnsfw [me/@user] [1-5]",
+		"example": "setnsfw me 5"
+	},
+	{
+		"name": "setmoney",
+		"desc": "Đặt thông số tiền cho chính bản thân hoặc người được chọn",
+		"usage": "setmoney [me/@user] [số tiền]",
+		"example": "setmoney me 100"
+	},
+	{
+		"name": "settings",
+		"desc": "Bộ công cụ quản lý dành cho quản trị viên của bot",
+		"usage": "admin settings hoặc admin",
+		"example": "admin settings"
+	}
+]

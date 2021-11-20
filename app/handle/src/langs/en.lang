@@ -1,0 +1,321 @@
+# If you want to break line, use \n. Eg: SpermLord\nCatalizcs.
+# After changes, you need to restart the bot to take effect.
+# Put a # symbol at head of line if you want that line does not run with code.
+
+# Fishing.js
+fishing.trashes=Trash(es)
+fishing.fish1=Normal fish(es)
+fishing.fish2=Rare fish(es)
+fishing.crabs=Crab(s)
+fishing.blowfishes=Blowfish(es)
+fishing.crocodiles=Crocodile(s)
+fishing.whales=Whale(s)
+fishing.dolphins=Dolphin(s)
+fishing.squids=Squid(s)
+fishing.sharks=Shark(s)
+
+# NSFW.js
+nsfw.tier5=You already in Tier 5.
+nsfw.notEnoughMoney=You don't have enough money. You need more %1 dollars to buy this.
+nsfw.purchaseSuccess=Purchased Tier %1 successfully!
+
+# Thread.js
+thread.newThread=New Group
+thread.needAorO=Need to be an Array or an Object or both.
+thread.banThread=Banned Group
+thread.unbanThread=Unbanned Group
+
+# User.js
+user.newUser=New User
+user.needAorO=Need to be an Array or an Object or both.
+user.banUser=Banned User
+user.unbanUser=Unbanned User
+
+# index.js
+index.refresh=Refreshing after 10 minutes!
+index.connectSuccess=Connected to database successfully!
+index.connectFailed=Unable to connect to database!
+
+# login.js
+login.2fa=Enter two-factor authentication code: 
+login.appstate=Successfully received appstate!
+login.err2FA=Your Facebook account uses two-factor authentication, to able to login, please use 'node login' in terminal/cmd!
+login.wrongAorP=Incorrect credentials!
+login.cantLogin=An error occurred while logging into your account!
+login.noFunc=Unable to find any functions!
+
+# listen.js
+listen.startEnv=Initializing enviroment variables...
+listen.successEnv=Successful environment variable initialization!
+listen.startListen=Start listening!
+
+# event.js
+event.connectSuccess=Connected successfully! Please use %1help to know all bot commands.
+event.welcome=Welcome aboard %1.\nWelcome to %2.\nYou are the %3(th) members of this group 🥳
+event.left=%1 seemed bored so he/she left the group 🥺
+event.kicked=%1 has just been kicked out 🤔
+
+# message.js
+message.error=An error occurred!
+message.notEnoughMoney=Your don't have enough money.
+message.busy=%1 is currently busy!
+message.busyWithReason=%1 is currently busy because: %2
+message.welcomeBack=Welcome back, %1!
+message.noAnswer=I have no answer.
+message.bannedCommand=This command has been banned!
+message.noErrorInfo=It seems you haven't entered the information yet, please enter the error information you encountered!
+message.reportInfo=Report from: %1\nGroup: %2\nError: %3\nTime: %4
+message.reportSent=Your error information has been sent to admin!
+message.alreadyOffNSFW=This group has been turned off NSFW before!
+message.cantOffNSFW=Oops, NSFW cannot be disabled in this group!
+message.disabledNSFW=Disabled NSFW successfully!
+message.alreadyOnNSFW=This group has not been turned off NSFW before!
+message.cantOnNSFW=Oops, NSFW cannot be enabled in this group!
+message.enabledNSFW=Enabled NSFW successfully!
+message.helpInfo==== Command Infomation ===\n- Name: %1\n- Description: %2\n- Usage: %3\n- Eg: %4
+message.adminHelpInvalid=The command you entered is invalid, type %1admin all to see all the admin commands.
+message.adminSetting1=🛠 | These are all the bot settings | 🛠\n\n=== Configurations ===\n[1] Prefix.\n[2] Bot name.\n[3] Admins list.\n[4] Language.\n[5] Auto Refresh.
+message.adminSetting2=\n=== Operations ===\n[6] Check for update.\n[7] Get banned users list.\n[8] Get banned groups list.\n[9] Send notification to all groups.\n[10] Get user ID by their name.\n[11] Get group ID by its name.\n[12] Apply changes.\n-> To choose, reply this message with the number <-
+message.alreadyBannedUser=%1 - %2 already banned before.
+message.cantBanUser=Unable to ban this user.
+message.bannedUser=%1 - %2 has been banned.
+message.notBannedUser=%1 - %2 has not been banned before.
+message.cantUnbanUser=Unable to unban this user.
+message.unbannedUser=%1 - %2 has been unbanned.
+message.bannedThread=This group has been banned.
+message.cantBanThread=Unable to ban this group.
+message.alreadyBannedThread=This group already banned before.
+message.unbannedThread=This group has been unbanned.
+message.notBannedThread=This group has not been banned before.
+message.cantUnbanThread=Unable to unban this group.
+message.enterBanCmd=Enter a command needs to be banned.
+message.listBannedCmds=Here is a list of the commands that are currently banned in this group: %1
+message.cantFindCmd=Unable to ban %1 because it is does not exist in cmds.json.
+message.bannedCmd=This command has been banned.
+message.enterUnbanCmd=Enter a command needs to be unbanned.
+message.notBannedCmd=This command has not been banned before.
+message.unbannedCmd=This command has been unbanned.
+message.alreadyOffResend=This group has been turned off Resend before.
+message.cantOffResend=Oops, unable to turn off Resend in this group.
+message.disabledResend=Disabled Resend successfully!
+message.alreadyOnResend=This group has not been turned off Resend before.
+message.cantOnResend=Oops, unable to turn on Resend in this group.
+message.enabledResend=Enabled Resend successfully!
+message.notUserID=It is not a user ID.
+message.addedUser=Added %1 to database.
+message.alreadyInDB=%1 already in database.
+message.restart=The bot will restart immediately!
+message.cmdNotFound=This command does not exist.
+message.alreadyOffLUNoti=This group has been turned off Levelup Noti before.
+message.cantOffLUN=Oops, unable to turn off Levelup Noti.
+message.disabledLUN=Disabled Levelup Noti successfully!
+message.alreadyOnLUN=This group has not been turn off Levelup Noti before.
+message.cantOnLUN=Oops, unable to turn on Levelup Noti.
+message.enabledLUN=Enabled Levelup Noti successfully!
+message.helpMsg=There are currently %1 commands that can be used on this bot\n\n%2
+message.generalHelpInvalid=The command you entered is invalid, type %1help to see all the commands.
+message.requestAdd1=Added: %1
+message.requestAdd2=User ID: %1 added %2 to request list.
+message.requestNotFound=Unable to find %1
+message.requestDelete=Deleted: %1
+message.noRequest=Nothing to do.
+message.allRequests=Here is all the requests:%1
+message.incorrectSyntax=Incorrect syntax, please learn more at %1help %2
+message.pwdNotFound=Password for %1 not found in .env
+message.dieAPI=Your API key is unusable.
+message.noVA=There are no result with that keyword.
+message.foundVA=Found %1 result(s), choose 1 of them below:\n\n%2
+message.exceededLength=%1 length exceeded allowed, maximum 6 minutes!
+message.allTags==== All %1 tags ===\n%2
+message.invalidTag=The tag you entered is invalid. Type %1help %2.
+message.replyPic=Please reply to the message that contains image.
+message.onePicOnly=Please reply the message has just one picture.
+message.noAPIKey=The bot doesn't have a %1 API Key.
+message.sauceResult=- Similarity: %1\n- Material: %2\n- Character(s): %3\n- Creator: %4\n- Site: %5
+message.noSauce=Can't to find any sauce with that image.
+message.didntEnterShort=You haven't entered the shortcut.
+message.notExistsShort=This shortcut doesn't exist.
+message.deletedShort=Deleted shortcut successfully!
+message.noShort=There is no shortcut in this group.
+message.allShorts=All the shortcuts in this group:\n%1
+message.sameIO=Input and Output are the same.
+message.noIO=You haven't entered %1.
+message.createdShort=Created new shortcut successfully!
+message.dupShort=This shortcut already exists. Adding output to that shortcut.
+message.sleepNow=If you go to bed now, the best times to wake up are:\n%1
+message.sleep=If you go to bed at %1, the best times to wake up are:\n%2
+message.wake=If you want to wake up at %1, the best times to sleep are:\n%2
+message.prefix=Prefix is: %1.
+message.credit=Project Mirai was created by:\nSpermLord: https://fb.me/MyNameIsSpermLord\nCatalizCS: https://fb.me/Cataliz2k\nFull source code at: https://github.com/roxtigger2003/mirai
+message.simOn=Enabled Sim.
+message.simOff=Disabled Sim.
+message.timeMin=%1 minute(s)
+message.timeSec=%1 second(s)
+message.remindAfter=I will remind you after %1
+message.remindUser=Strangers
+message.remind=Strangers, you seem to have asked me to remind you to do something, right?
+message.isNaN=It is not a number!
+message.lessThan=Must less than %1!
+message.ga=Yahoo %1, you won the giveaway! The reward is "%2" 🥳🥳
+message.locatNotFound=Can't find %1.
+message.locatData=🌡 Temp: %1℃\n🌡 Feels like: %2℃\n☁️ Sky: %3\n💦 Humidity: %4%\n💨 Wind speed: %5km/h\n🌅 Sun rises: %6\n🌄 Sun sets: %7
+message.covid=* World:\n- Infected: %1\n- Dead: %2\n- Recovered: %3\n* Vietnam:\n- Infected: %4\n- Dead: %5\n- Recovered: %6
+message.choose=Hmm, I will choose: %1.
+message.waifu1=I will be your wife ❤\n❤ Love you ❤
+message.waifu2=No, we are just friends.
+message.roll=UwU, the best number I can choose for you is: %1
+message.minGTEmax=Oops, min >= max.
+message.cantGetRank1=You are not currently in the database so you cannot see your rank, please try again in 5 seconds.
+message.cantGetRank2= is not currently in the database so you cannot see his/her rank.
+message.translate=Translation: %1\nFrom %2 to %3
+message.uptime=Bot has been working for %1 hour(s) %2 minute(s) %3 second(s).
+message.unsendErr1=Can't to unsend message from other user.
+message.unsendErr2=Reply to the message you want to unsend.
+message.wikiErr1=Enter what you need to search for.
+message.wikiErr2=Can't find %1
+message.iss=Current location of International Space Station 🌌🌠🌃\n- Latitude: %1\n- Longitude: %2
+message.neo=There are currently a total of %1 objects near the Earth.
+message.spacex=Information about the latest launch of SpaceX:\n- Mission: %1\n- Launch year: %2\n- Launch date: %3\n- Rocket name: %4\n- YouTube: %5
+message.afk=You have enabled afk mode.
+message.afkWithReason=You have enabled afk mode with reason: %1
+message.osuErr=Missing username!
+message.didntUnderstand=I didn't understand your input.
+message.mirai=My name is Mirai.
+message.created=I was created by CatalizCS and SpermLord.
+message.notSupportXYz=Reduced chemical equations are not currently supported. Convert (XY)z to the XzYz form.
+message.15secs==== You have 15 seconds to answer ===\n%1
+message.offNSFW=NSFW is currently disabled in this group.
+message.idealCode=The ideal code is %1
+message.cantFindHentai=Can't find this hentai.
+message.codeInfo=Title: %1\nAuthor(s): %2\nCharacter(s): %3\nTags: %4\nLink: %5
+message.exceededNSFW=You have run out of %1%2 uses. Upgrade to a higher NSFW Tier or wait until tomorrow.
+message.godmodeNSFW=You are in God Mode!\nYou will not be limited to using the NSFW command.
+message.myNSFW=Your NSFW Tier is %1.\n%2porn uses left is: %3\n%2hentai uses left is: %4
+message.cantBuyNSFW=You are in God Mode so you won't be able to buy NSFW Tier.
+message.nsfwTierLimit=NSFW Tier cannot be below -1 and above 5.
+message.gmConfig=You have not enabled NSFW God Mode in config.
+message.setNSFWMe=Your NSFW Tier has been set to: %1.
+message.setNSFWUser=%1 NSFW Tier has been set to: %2
+message.setNSFWgm=You have enabled God Mode for %1! Now this person can use the NSFW command without any restrictions!
+message.coinHead=Head!
+message.coinTail=Tail!
+message.moneyMe=Your current balance: %1 dollars.
+message.moneyUser=%1's current balance: %2 dollars.
+message.receivedDaily=You received today's rewards, please come back after: %1 hours %2 minutes %3 seconds.
+message.daily=You got today's reward. Good Luck <3
+message.worked=You have worked today, to avoid exhaustion please come back after: %1 minute(s) %2 second(s).
+message.job1=sell lottery tickets
+message.job2=repair car
+message.job3=programming
+message.job4=hack Facebook
+message.job5=chef
+message.job6=mason
+message.job7=fake taxi
+message.job8=gangbang someone
+message.job9=plumber ( ͡° ͜ʖ ͡°)
+message.job10=streamer
+message.job11=online seller
+message.job12=housewife
+message.job13=sell "flower"
+message.job14=find jav/hentai code for SpermLord
+message.job15=play Yasuo and carry your team
+message.work=You did the job: %1 and received: %2 dollars.
+message.betToLow=Your bet is too low, the minimum is 50 dollars.
+message.roulWon=You have chosen color %1, you win by the amount multiplied by %2: %3 dollars.
+message.roulLose=It's %1.\nYou lose and lost the money.
+message.slotWon=%1 | %2 | %3\nYou won! You received %4 dollars.
+message.slotLose=%1 | %2 | %3\nYou lose! %4 has gone.
+message.pay=You have paid %1 dollars to %2.
+message.payToLow=Your payment is too low, the minimum is 50 dollars.
+message.setMeMoney=Changed your balance to: %1 dollars.
+message.setUserMoney=Changed %1's balance to %2 dollars.
+message.stealCooldown=You just stole, so as not to be arrested by the police, please come back after %1 minutes %2 seconds.
+message.stealFailed1=Uh oh, you can't steal from this user. Please try again.
+message.stealPoorUser=You just stole from a poor user. So you got nothing.
+message.steal1=You just stole %1 dollars from a user in this group.
+message.steal2=You just stole all balance of a user in this group.
+message.needMoney=You have no money, WORK TO GET SOME.
+message.stealFailed2=You have been arrested and lost %1 dollars.
+message.congratHero=Congrat %1! You arrested %2 and received %3 dollars as a reward!
+message.noRod=It seem like you don't have any fishing rod. Buy a new one in shop!
+message.limitFishTime=Only fishing every %1 seconds.
+message.brokenRod=Your fishing rod seems to be broken, fix it in the shop.
+message.defeatMonster==== Oh no, you encounter the monster of this lake and have a(n) %1 difficulty, you have 15 seconds to answer the question to take down this monster ===\n%2
+message.caught=You caught a %1 😮
+message.inv1==== Your Inventory ===\n- Your fishing rod level: %1 (Durability: %2/%3)\n- Current Exp: %4/%5\n
+message.inv2=- All sea items:\n+ Trash(es): %1\n+ Normal fish(es): %2\n+ Rare fish(es): %3\n+ Crab(s): %4\n+ Blowfish(es): %5\n+ Crocodile: %6\n+ Whale(s): %7\n+ Dolphin(s): %8\n+ Squid(s): %9\n+ Shark(s): %10\n
+message.inv3=- Total of amount you can receive after sell all items: %1 dollars.
+message.noSellItem=Enter item you want to sell.
+message.sellItem=You sold %1 %2 and received %3 dollars.
+message.sellAllItems=You will receive %1 dollars after sell all items in your inventory. Do you want to continue?\n=== Like this message to sell all or dislike this message to cancel ===
+message.itemList==== Money list of items ===\n1/ Trash: 1 dollar\n2/ Normal fish: 30 dollars\n3/ Rare fish: 100 dollars\n4/ Crab: 250 dollars\n5/ Blowfish: 300 dollars\n6/ Crocodile: 500 dollars\n7/ Whale: 750 dollars\n8/ Dolphin: 750 dollars\n9/ Squid: 1000 dollars\n10/ Shark: 1000 dollars
+message.stealFishCooldown=You just stole, to avoid losing all your items, please come back after: %1 minutes %2 seconds.
+message.intendSteal=You intend to steal a(n) %1, but the victim seems to didn't caught it yet.
+message.stealFish=You just stole a(n) %1.
+message.stealFishFailed1=The person you were going to steal locked the door very carefully, you could not steal anything.
+message.stealFishFailed2=You have been arrested and lost all items in your inventory.
+message.fishingShop=>> Fishing Shop <<\n---------------------\n[1] Upgrade Rod\n[2] Repair Rod\n[3] Buy Rod\n[4] Buy Bait\n[5] Upgrade Bait
+message.cmdNotFound=The command you entered does not exist. You mean %1, right?
+message.keyboardHero=, your keyboard hero level has reached level %1!
+
+# message_reply.js
+reply.askToChangePrefix=Current bot prefix is: %1\n=== To change, reply this message with the prefix you want to change to ===
+reply.askToChangeName=Current bot name is: %1\n=== To change, reply this message with the name you want to change to ===
+reply.askToChangeAdmins=Current bot admins is: %1\n=== To change, reply this message with the admins id you want to change to. Eg: uid1_uid2_... ===
+reply.askToChangeLang=Current bot language is: %1\n=== To change, reply this message with the language you want to change to ===
+reply.askToChangeAutoRestart=Current bot auto restart is: %1\n=== To change, reply this message with on/off you want to change to ===
+reply.newUpdate=New update is available! Open terminal/cmd and type "node update" to update!
+reply.noNewUpdate=You are using the latest version!
+reply.cantCheckUpdate=Unable to check update. Please try again later.
+reply.bannedUsers=Banned users:%1
+reply.noBannedUser=Didn't found any banned users.
+reply.bannedThreads=Banned groups:%1
+reply.noBannedThread=Didn't found any banned groups.
+reply.sendNoti=Enter the message you want to send.
+reply.searchUser=Enter the username you need to search for.
+reply.searchThread=Enter the groups name you need to search for.
+reply.restart=Applying changes... Please wait a moment for the bot to restart!
+reply.soHigh=Did you just smoke weed?
+reply.changedPrefix=Changed bot prefix to: %1
+reply.changedName=Changed bot name to: %1
+reply.changedLang=Changed bot language to: %1
+reply.changedAdmins=Changed bot admins to: %1
+reply.onlyOnOff=Only on/off.
+reply.same=Your configuration is same as before.
+reply.changedAutoRestart=Changed auto restart to: %1
+reply.sentNoti=Sent notification with content: %1
+reply.foundUsers=Found %1 user(s):%2
+reply.notFoundUser=Didn't find any users with this name:%1
+reply.foundThreads=Found %1 groups(s):%2
+reply.notFoundThread=Didn't find any groups with this name:%1
+reply.outOfTime=You have run out of time to answer this question!
+reply.correctAns=Bing bong, your results are absolutely correct! You answered this question within %1 second(s).
+reply.wrongAnsMath=You got this question wrong, the correct answer is: %1
+reply.upgradeRod=You need %1 exp and %2 dollars to upgrade to %3\nReaction 👍 to agree or select any reaction to cancel.
+reply.fixRod=To repair this fishing rod, you need %1 dollars, do you agree?\nReaction 👍 to agree or choose any reaction to cancel.
+reply.buyRod=To buy type 1 fishing rod, you need at least 1000 dollars, do you agree?\nReaction 👍 to agree or choose any reaction to cancel.
+reply.comingSoon=Coming soon!
+reply.outOfTime2=You have run out of time allowed to answer this question and %1 %2 have been stolen.
+reply.wrongAnsFish=You have incorrectly answered this question and %1 %2 have been stolen.
+reply.defeatMonster=Bing bong, your result is absolutely correct and the monster is defeated. Your reward is:\n- %1 %2\n- Exp: %3\n\nYou answered this question within %4 second(s).
+reply.chooseVA=Choose from 1 to 5.
+reply.processVA=%1 is being processed, long %1 may take several seconds.
+reply.exceededLength=%1 length exceeded allowed, maximum 6 minutes!
+
+# message_reaction.js
+reaction.soldAll=You have sold out all sea items in your inventory and received %1 dollars.
+reaction.canceledSP=You have canceled this transaction.
+reaction.canceledUpgrade=You have canceled this upgrade.
+reaction.notEnoughMoney=You are not eligible, and you still lack %1 dollars.
+reaction.notEnoughExp=You are not eligible, and you still lack %1 exp.
+reaction.dontHaveRodToUpgrade=You don't have a fishing rod to upgrade, buy a new one at the shop!
+reaction.alreadyMax=Your fishing rod has been fully upgraded before!
+reaction.upgradeSuccess=Your fishing rod has been successfully upgraded!
+reaction.canceledRepair=Your have canceled this repair.
+reaction.repairSuccess=Your fishing rod has been successfully repaired!
+reaction.alreadyHave=You already have a fishing rod!
+reaction.buyFirstRod=You have successfully purchased a new fishing rod. This is the first step on your path to becoming the best fisherman here!\nGood Luck ♥
+
+# unsend.js
+unsend.unsent= just unsent a message:\n%1
+unsend.unsentAttachment= just unsent something 👀

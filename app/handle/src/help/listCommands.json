@@ -1,0 +1,566 @@
+[
+	{
+		"name": "report",
+		"desc": "Gửi thông tin lỗi đến admin hoặc yêu cầu sự giúp đỡ",
+		"usage": "report [Lỗi bạn cần phải báo cáo]",
+		"example": "report bot không chạy được",
+		"group": "system"
+	},
+	{
+		"name": "help",
+		"desc": "Hướng dẫn cho người mới",
+		"usage": "help [command]",
+		"example": "help say",
+		"group": "general"
+	},
+	{
+		"name": "request",
+		"desc": "Yêu cầu admin thêm thứ gì đó vào bot",
+		"usage": "request [add,list] [Nội dung]",
+		"example": "request list",
+		"group": "system"
+	},
+	{
+		"name": "morse",
+		"desc": "Mã hoá đoạn văn bản của bạn trở thành mã morse",
+		"usage": "morse [encode hoặc decode] [đoạn text ASCII cần mã hoá]",
+		"example": "morse encode hello cac ban",
+		"group": "cipher"
+	},
+	{
+		"name": "caesar",
+		"desc": "Mã hóa đoạn văn bản của bạn trở thành Mật Mã Caesar",
+		"usage": "caesar [encode/decode] [đoạn text cần mã hóa]",
+		"example": "caesar encode SpermLord",
+		"group": "cipher"
+	},
+	{
+		"name": "vigenere",
+		"desc": "Mã hóa đoạn văn bản của bạn trở thành Mật Mã Vigenere",
+		"usage": "vigenere [encode/decode] [đoạn text cần mã hóa]",
+		"example": "vigenere encode SpermLord",
+		"group": "cipher"
+	},
+	{
+		"name": "rot47",
+		"desc": "Mã hóa đoạn văn bản của bạn trở thành Mật Mã ROT47",
+		"usage": "rot47 [encode/decode] [đoạn text cần mã hóa]",
+		"example": "rot47 encode SpermLord",
+		"group": "cipher"
+	},
+	{
+		"name": "audio",
+		"desc": "Lấy âm thanh từ link hoặc url youtube",
+		"usage": "audio [link hoặc từ khoá]",
+		"example": "audio https://www.youtube.com/?watch=xxxyyyzzz",
+		"group": "media"
+	},
+	{
+		"name": "video",
+		"desc": "Lấy video từ link youtube",
+		"usage": "video [link hoặc từ khoá]",
+		"example": "video https://www.youtube.com/?watch=xxxyyyzzz",
+		"group": "media"
+	},
+	{
+		"name": "anime",
+		"desc": "Lấy ảnh anime SFW",
+		"usage": "anime [tag]",
+		"example": "anime neko",
+		"group": "general"
+	},
+	{
+		"name": "meme",
+		"desc": "Lấy meme hay trên diễn đàn reddit",
+		"usage": "meme",
+		"example": "meme",
+		"group": "general"
+	},
+	{
+		"name": "gif",
+		"desc": "Lấy ngẫu nhiên các gif giải trí",
+		"usage": "gif [cat, dog, capoo, bomman, mixi]",
+		"example": "gif mixi",
+		"group": "general"
+	},
+	{
+		"name": "hug",
+		"desc": "Ôm người bạn tag",
+		"usage": "hug [tag người bạn cần ôm]",
+		"example": "hug @Mirai-Chan",
+		"group": "general"
+	},
+	{
+		"name": "kiss",
+		"desc": "Hôn người bạn tag",
+		"usage": "kiss [tag người bạn cần hôn]",
+		"example": "kiss @Mirai-Chan",
+		"group": "general"
+	},
+	{
+		"name": "slap",
+		"desc": "Tát người bạn tag",
+		"usage": "slap [tag người bạn cần tát]",
+		"example": "slap @Mirai-Chan",
+		"group": "general"
+	},
+	{
+		"name": "meow",
+		"desc": "Lệnh random những con mèo :D!",
+		"usage": "meow",
+		"example": "meow",
+		"group": "media"
+	},
+	{
+		"name": "sauce",
+		"desc": "Tìm nguồn bức ảnh anime giúp bạn",
+		"usage": "sauce và reply ảnh cần tìm",
+		"example": "sauce",
+		"group": "media"
+	},
+	{
+		"name": "change-mind",
+		"desc": "edit text của bạn vào image change mind",
+		"usage": "change-mind [text1]",
+		"example": "change-mind hello",
+		"group": "media"
+	},
+	{
+		"name": "buttons",
+		"desc": "meme edit",
+		"usage": "buttons [text1] | [text2]",
+		"example": "buttons không | có",
+		"group": "media"
+	},
+	{
+		"name": "new-pwd",
+		"desc": "meme edit",
+		"usage": "new-pwd [text1] | [text2]",
+		"example": "new-pwd không | có",
+		"group": "media"
+	},
+	{
+		"name": "short",
+		"desc": "Tạo một phím tắt cho những thứ bạn nhập vào",
+		"usage": "short [input] => [output] hoặc [output1] | [output2]",
+		"example": "short author => SpermLord & Catalizcs",
+		"group": "general"
+	},
+	{
+		"name": "sleep",
+		"desc": "Tính thời gian thức dậy hoàn hảo cho bạn",
+		"usage": "sleep [thời gian/để trống]",
+		"example": "sleep 22:00",
+		"group": "general"
+	},
+	{
+		"name": "wake",
+		"desc": "Tính thời gian đi ngủ hoàn hảo cho bạn",
+		"usage": "wake [thời gian]",
+		"example": "wake 06:00",
+		"group": "general"
+	},
+	{
+		"name": "prefix",
+		"desc": "Kiểm tra prefix của bot",
+		"usage": "prefix",
+		"example": "prefix",
+		"group": "general"
+	},
+	{
+		"name": "rname",
+		"desc": "Thay đổi biệt danh của bạn theo tên ngẫu nhiên!",
+		"usage": "rname",
+		"example": "rname",
+		"group": "general"
+	},
+	{
+		"name": "levelup",
+		"desc": "bật tắt thông báo levelup",
+		"usage": "levelup [on/off]",
+		"example": "levelup on",
+		"group": "system"
+	},
+	{
+		"name": "nino on/off",
+		"desc": "Bật tắt ninoreply",
+		"usage": "nino [on/off]",
+		"example": "nino on",
+		"group": "general"
+	},
+	{
+		"name": "nino",
+		"desc": "Trò chuyện cùng nino",
+		"usage": "nino [nội dung]",
+		"example": "nino hello",
+		"group": "general"
+	},
+	{
+		"name": "mit",
+		"desc": "Trò chuyện cùng mitsuku",
+		"usage": "mit [nội dung tiếng anh]",
+		"example": "mit hello there",
+		"group": "general"
+	},
+	{
+		"name": "penis",
+		"desc": "Như cái tên, show cu hay pay ặc",
+		"usage": "penis",
+		"example": "mit penis",
+		"group": "general"
+	},
+	{
+		"name": "reminder",
+		"desc": "Nhắc bạn sau một khoảng thời gian mà bạn đặt",
+		"usage": "reminder [giây]",
+		"example": "reminder 100",
+		"group": "general"
+	},
+	{
+		"name": "randomcolor",
+		"desc": "Đổi màu sắc cuộc trò chuyện thành màu ngẫu nhiên",
+		"usage": "randomcolor",
+		"example": "randomcolor",
+		"group": "box"
+	},
+	{
+		"name": "poll",
+		"desc": "Tạo cuộc thăm dò ý kiến trong group",
+		"usage": "poll [tên/chủ đề] -> [lựa chọn 1] | [lựa chọn 2] | [lựa chọn n+1]",
+		"example": "poll Nghĩa or Tâm? -> Nghĩa | Tâm",
+		"group": "general"
+	},
+	{
+		"name": "rainbow",
+		"desc": "Đổi màu sắc cuộc trò chuyện liên tục theo con số đưa ra",
+		"usage": "rainbow [số lần đổi]",
+		"example": "rainbow 10",
+		"group": "box"
+	},
+	{
+		"name": "ga",
+		"desc": "Tạo ra 1 giveaway ảo",
+		"usage": "ga [phần thưởng]",
+		"example": "ga trinh đít của Nghĩa (?)",
+		"group": "general"
+	},
+	{
+		"name": "weather",
+		"desc": "Kiểm tra thời tiết hiện tại ở khu vực thành phố bạn nhập",
+		"usage": "weather [thành phố]",
+		"example": "weather Thành Phố Hồ Chí Minh",
+		"group": "general"
+	},
+	{
+		"name": "say",
+		"desc": "Điều khiển bot biến văn bản thành giọng đọc",
+		"usage": "say [en,ko,ru,ja] [Văn bản] nếu sử dụng tiếng việt thì phần language để trống",
+		"example": "say Mirai-Chan xin chào tất cả mọi người",
+		"group": "general"
+	},
+	{
+		"name": "covid",
+		"desc": "Cập nhật tình hình covid-19 thế giới và Việt Nam nhanh nhất",
+		"usage": "covid",
+		"example": "covid",
+		"group": "general"
+	},
+	{
+		"name": "choose",
+		"desc": "chọn ngẫu nhiên trong các kết quả bạn đưa",
+		"usage": "choose [kết quả 1] | [kết quả 2] ",
+		"example": "choose yêu | không yêu",
+		"group": "general"
+	},
+	{
+		"name": "waifu",
+		"desc": "Thử vận may với Mirai-Chan",
+		"usage": "waifu",
+		"example": "waifu",
+		"group": "general"
+	},
+	{
+		"name": "roll",
+		"desc": "Lấy con số may mắn của bạn, please đừng đi đánh đề :<",
+		"usage": "roll [min] [max]",
+		"example": "roll 0 100",
+		"group": "general"
+	},
+	{
+		"name": "echo",
+		"desc": "Điều khiển bot nói lại văn bản bạn viết",
+		"usage": "echo [văn bản hoặc nội dung]",
+		"example": "echo Mirai-Chan xin chào",
+		"group": "general"
+	},
+	{
+		"name": "rank",
+		"desc": "Lấy rank hiện tại của bạn trên hệ thống bot, remake rank_card from canvacord",
+		"usage": "rank [tag người cần lấy/để trống]",
+		"example": "rank @Mirai-chan",
+		"group": "system"
+	},
+	{
+		"name": "trans",
+		"desc": "Dịch văn bản bạn nhập",
+		"usage": "trans [văn bản] -> [vi, ru, ja], đây là toàn bộ ngôn ngữ hỗ trợ: https://www.labnol.org/code/19899-google-translate-languages",
+		"example": "trans hello world -> vi",
+		"group": "general"
+	},
+	{
+		"name": "uptime",
+		"desc": "Xem thời gian hoạt động của bot cũng có thể kiểm tra xem bot có hoạt động hay không",
+		"usage": "uptime",
+		"example": "uptime",
+		"group": "system"
+	},
+	{
+		"name": "gỡ",
+		"desc": "Gỡ tin nhắn của bot",
+		"usage": "phản hồi đoạn chat mà bot đã gửi và nhập gỡ",
+		"example": "gỡ",
+		"group": "general"
+	},
+	{
+		"name": "uid",
+		"desc": "Xem UserID của tài khoản được nhắc tới",
+		"usage": "uid [để trống/nhắc tới một tài khoản]",
+		"example": "uid @SpermLord",
+		"group": "general"
+	},
+	{
+		"name": "tid",
+		"desc": "Xem ID của nhóm chat",
+		"usage": "tid",
+		"example": "tid",
+		"group": "general"
+	},
+	{
+		"name": "wiki",
+		"desc": "Tìm nội dung trên Wikipedia",
+		"usage": "wiki <en> [nội dung cần tìm hiểu] nếu sử dụng tiếng Việt không cần nhập en",
+		"example": "wiki loài chó",
+		"group": "general"
+	},
+	{
+		"name": "ping",
+		"desc": "Tag toàn bộ thành viên trong nhóm cùng một lúc",
+		"usage": "ping",
+		"example": "ping",
+		"group": "general"
+	},
+	{
+		"name": "earth",
+		"desc": "Xem hình ảnh trái đất gần đây nhất",
+		"usage": "earth",
+		"example": "earth",
+		"group": "space"
+	},
+	{
+		"name": "iss",
+		"desc": "Xem toạ độ mà tàu vũ trụ đang lưu lạc",
+		"usage": "iss",
+		"example": "iss",
+		"group": "space"
+	},
+	{
+		"name": "neo",
+		"desc": "Đếm số lượng vật thể gần trái đất",
+		"usage": "neo",
+		"example": "neo",
+		"group": "space"
+	},
+	{
+		"name": "afk",
+		"desc": "Bật mode afk để người bạn của bạn biết rằng bạn đang bận!",
+		"usage": "afk [lời nhắn]",
+		"example": "afk đi ngủ",
+		"group": "system"
+	},
+	{
+		"name": "math",
+		"desc": "Bảo bot có thể làm toán",
+		"usage": "math [phép toán]",
+		"example": "math 1+1",
+		"group": "study"
+	},
+	{
+		"name": "chemeb",
+		"desc": "Cân bằng phương trình hoá học",
+		"usage": "chemeb [Phương trình cần cân bằng]",
+		"example": "chemeb C38H76N2O2 + NaNO2 = Na2O + CO2 + H2O + N2",
+		"group": "study"
+	},
+	{
+		"name": "domath",
+		"desc": "cho bạn động não!",
+		"usage": "domath [baby, easy, medium, hard, extreme, impossible/Để trống]",
+		"example": "domath baby",
+		"group": "study"
+	},
+	{
+		"name": "nhentai",
+		"desc": "Lấy thông tin chuyện của bạn ( ͡° ͜ʖ ͡°)",
+		"usage": "nhentai [id/để trống]",
+		"example": "nhentai 177013",
+		"group": "nsfw"
+	},
+	{
+		"name": "hentaivn",
+		"desc": "Lấy thông tin chuyện của bạn ( ͡° ͜ʖ ͡°)",
+		"usage": "hentaivn [id/để trống]",
+		"example": "hentaivn 19945",
+		"group": "nsfw"
+	},
+	{
+		"name": "porn",
+		"desc": "Cái tên nói lên tất cả ( ͡° ͜ʖ ͡°)",
+		"usage": "porn [boobs, cum, bj, feet, ass, sex, pussy, teen, bdsm, asian, pornstar, gay(?)]",
+		"example": "porn boobs",
+		"group": "nsfw"
+	},
+	{
+		"name": "hentai",
+		"desc": "Lấy ảnh hentai NSFW",
+		"usage": "hentai [tag]",
+		"example": "hentai yuri",
+		"group": "nsfw"
+	},
+	{
+		"name": "mynsfw",
+		"desc": "Xem hạng NSFW của bạn",
+		"usage": "mynsfw",
+		"example": "mynsfw",
+		"group": "nsfw"
+	},
+	{
+		"name": "buynsfw",
+		"desc": "Mua hạng NSFW theo từng bậc 1-2-3-4-5",
+		"usage": "buynsfw",
+		"example": "buynsfw",
+		"group": "nsfw"
+	},
+	{
+		"name": "coinflip",
+		"desc": "Chơi trò tung đồng xu",
+		"usage": "coinflip",
+		"example": "coinflip",
+		"group": "economy"
+	},
+	{
+		"name": "money",
+		"desc": "Xem số tiền bạn đang có",
+		"usage": "money",
+		"example": "money",
+		"group": "economy"
+	},
+	{
+		"name": "daily",
+		"desc": "Nhận phần thưởng hằng ngày",
+		"usage": "daily",
+		"example": "daily",
+		"group": "economy"
+	},
+	{
+		"name": "work",
+		"desc": "Có làm thì mới có ăn",
+		"usage": "work",
+		"example": "work",
+		"group": "economy"
+	},
+	{
+		"name": "roul",
+		"desc": "Chơi cò quay (roulette)",
+		"usage": "roul [black x0.5, red x1, green x1.25, yellow x1.5, violet x1.75, blue x2] [số tiền cần đặt]",
+		"example": "roul red 500",
+		"group": "economy"
+	},
+	{
+		"name": "sl",
+		"desc": "Đánh bạc bằng hình thức hoa quả",
+		"usage": "sl [số tiền bạn muốn cá cược]",
+		"example": "sl 500",
+		"group": "economy"
+	},
+	{
+		"name": "pay",
+		"desc": "Chuyển một số tiền cho người mà bạn tag",
+		"usage": "pay [tag người nhận] [số tiền muốn chuyển]",
+		"example": "pay @Mirai-Chan 500",
+		"group": "economy"
+	},
+	{
+		"name": "steal",
+		"desc": "Trộm tiền của một trong số người trong group!",
+		"usage": "steal",
+		"example": "steal",
+		"group": "economy"
+	},
+	{
+		"name": "fishing",
+		"desc": "Câu cá thôi",
+		"usage": "fishing",
+		"example": "fishing",
+		"group": "economy"
+	},
+  	{
+		"name": "box",
+		"desc": "Quản lý nhóm chat của bạn",
+		"usage": "box [info/emoji/admin/name/image]",
+		"example": "box",
+		"group": "box"
+	},
+  	{
+		"name": "rest",
+		"desc": "Khởi động lại bot",
+		"usage": "rest",
+		"example": "rest",
+		"group": "system"
+	},
+  	{
+		"name": "loli",
+		"desc": "Ảnh loli",
+		"usage": "loli",
+		"example": "loli",
+		"group": "general"
+	},
+  	{
+		"name": "wallpaper",
+		"desc": "Ảnh nền anime đẹp",
+		"usage": "wallpaper",
+		"example": "wallpaper",
+		"group": "general"
+	},
+  	{
+		"name": "checktt",
+		"desc": "Check tương tác (tính từ lúc bot vào)",
+		"usage": "checktt [all/@tag]",
+		"example": "checktt",
+		"group": "box"
+	},
+  	{
+		"name": "ghep",
+		"desc": "ghép đôi với thành viên trong box (cần 500 đô)",
+		"usage": "ghep",
+		"example": "ghep",
+		"group": "general"
+	},
+	{
+		"name": "resend",
+		"desc": "bật/tắt chống gỡ tin nhắn",
+		"usage": "resend [on/off]",
+		"group": "general"
+	},
+	{
+		"name": "antiout",
+		"desc": "bật/tắt chống out chùa",
+		"usage": "antiout [on/off]",
+		"group": "general"
+	},
+	{
+		"name": "setPrefix",
+		"desc": "Thay prefix(dấu lệnh) cho riêng từng nhóm",
+		"usage": "setPrefix prefix",
+		"group": "general"
+	}
+]

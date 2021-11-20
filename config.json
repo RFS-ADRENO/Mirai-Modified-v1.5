@@ -1,0 +1,15 @@
+{
+	  "LANGUAGE": "vi",
+	  "BOT_NAME": "Bot",
+	  "ADMINS": ["100008907121641"],
+	  "PREFIX": "/",
+	  "SELFLISTEN": false,
+	  "REFRESHING": "on",
+	  "GOOGLE_SEARCH": " ",
+	  "WOLFARM": "T8J8YV-H265UQ762K",
+	  "TENOR": "73YIAOY3ACT1",
+	  "OPENWEATHER": "081c82065cfee62cb7988ddf90914bdd",
+	  "SAUCENAO": "61e802b1478f8e85198f28ed6ac2de6efe5d0a41",
+	  "CAESAR": "happy2021",
+	  "VIGENERE": "happy2021"
+}
