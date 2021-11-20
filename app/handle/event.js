@@ -25,6 +25,7 @@ module.exports = function ({
     let threadName = threadInfo.threadName;
     switch (event.logMessageType) {
       case "log:subscribe":
+        let setPre = JSON.parse(fs.readFileSync(__dirname + '/src/prefix.json'));
         var mentions = [],
           nameArray = [],
           memLength = [];
@@ -32,8 +33,8 @@ module.exports = function ({
           let id = event.logMessageData.addedParticipants[i].userFbId;
           if (id == api.getCurrentUserID()) {
             await Thread.createThread(event.threadID);
-            api.changeNickname(config.botName, event.threadID, api.getCurrentUserID());
-            api.sendMessage(getText('connectSuccess', config.prefix), event.threadID);
+            api.changeNickname(`[ ${(event.threadID in setPre) ? setPre[event.threadID] : config.prefix} ] ` + config.botName, event.threadID, api.getCurrentUserID());
+            api.sendMessage(getText('connectSuccess', (event.threadID in setPre) ? setPre[event.threadID] : config.prefix), event.threadID);
           } else {
             let userName = event.logMessageData.addedParticipants[i].fullName;
             await User.createUser(id);
