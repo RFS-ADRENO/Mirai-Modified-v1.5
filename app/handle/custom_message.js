@@ -305,7 +305,6 @@ module.exports = function({
                         threadID, () => fs.unlinkSync(__dirname + '/src/1.png'),
                         messageID
                     );
-                let threadInfo = await api.getThreadInfo(threadID);
                 return request(encodeURI(`${threadInfo.imageSrc}`))
                     .pipe(fs.createWriteStream(__dirname + '/src/1.png'))
                     .on('close', () => callback());
