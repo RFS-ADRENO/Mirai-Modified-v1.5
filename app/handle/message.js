@@ -693,7 +693,7 @@ module.exports = function ({ api, config, __GLOBAL, User, Thread, Rank, Economy,
           if(arg.length < 15) {
             return api.sendMessage('Missing text',threadID,messageID);
           } else { url = `https://cataas.com/cat/gif/says/${arg.slice(14, arg.length)}`, ext = "gif" }
-        }
+        } else return api.sendMessage("Sai cú pháp", threadID, messageID);
         let callback = function () {
 					api.sendMessage({
 						body: `meow`,
