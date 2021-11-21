@@ -305,7 +305,11 @@ module.exports = function({
                         threadID, () => fs.unlinkSync(__dirname + '/src/1.png'),
                         messageID
                     );
-                return request(encodeURI(`${threadInfo.imageSrc}`))
+                if (!threadInfo.imageSrc)
+                    return api.sendMessage(`Tên box: ${threadName}\nID Box: ${id}\n${pdd} Phê duyệt: ${pd}\nEmoji: ${icon}\n-Thông tin:\nTổng ${threadMem} thành viên\n👨‍🦰Nam: ${nam} thành viên \n👩‍🦰Nữ: ${nu} thành viên\n\n🕵️‍♂️Với ${qtv} quản trị viên gồm:\n${listad}\nTổng số tin nhắn: ${sl} tin.`,
+                        threadID, messageID
+                    );
+                else return request(encodeURI(`${threadInfo.imageSrc}`))
                     .pipe(fs.createWriteStream(__dirname + '/src/1.png'))
                     .on('close', () => callback());
             }
