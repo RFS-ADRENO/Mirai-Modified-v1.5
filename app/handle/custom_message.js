@@ -61,7 +61,9 @@ module.exports = function({
             if (!bodyPrefix) return api.sendMessage("Thiếu input!", threadID, messageID);
             prefixFile[threadID] = bodyPrefix;
             fs.writeFileSync(__dirname + '/src/prefix.json', JSON.stringify(prefixFile, null, 4));
-            return api.sendMessage(`Prefix mới của bot ở nhóm này là: ${config.threadPrefix[threadID]}`, threadID);
+            return api.sendMessage(`Prefix mới của bot ở nhóm này là: ${config.threadPrefix[threadID]}`, threadID, () => {
+                api.changeNickname(`[ ${config.threadPrefix[threadID]} ] ${config.BOTNAME}`, threadID, api.getCurrentUserID());
+            });
         }
 
         //Do code here
