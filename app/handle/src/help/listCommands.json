@@ -413,13 +413,6 @@
 		"group": "nsfw"
 	},
 	{
-		"name": "porn",
-		"desc": "Cái tên nói lên tất cả ( ͡° ͜ʖ ͡°)",
-		"usage": "porn [boobs, cum, bj, feet, ass, sex, pussy, teen, bdsm, asian, pornstar, gay(?)]",
-		"example": "porn boobs",
-		"group": "nsfw"
-	},
-	{
 		"name": "hentai",
 		"desc": "Lấy ảnh hentai NSFW",
 		"usage": "hentai [tag]",
