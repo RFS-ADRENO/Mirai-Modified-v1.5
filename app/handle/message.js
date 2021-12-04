@@ -1100,22 +1100,18 @@ module.exports = function ({ api, config, __GLOBAL, User, Thread, Rank, Economy,
 		}
 
 		//cập nhật tình hình dịch
-		if (contentMessage == `${prefix}covid`) {
-    let data = (await axios.get('https://www.spermlord.ga/covid')).data;
-	  api.sendMessage(		
-		'====== Thế Giới ======\n' +
-		`😷 Nhiễm: ${data.thegioi.nhiem}\n` +
-		`💚 Đã hồi phục: ${data.thegioi.hoiphuc}\n` +
-		`💀 Tử vong: ${data.thegioi.tuvong}\n` +
-		'====== Việt Nam ======\n' +
-		`😷 Nhiễm: ${data.vietnam.nhiem}\n` +
-		`💚 Đã hồi phục: ${data.vietnam.hoiphuc}\n` +
-		`💀 Tử vong: ${data.vietnam.tuvong}\n` +
-		`📰 Tin tức mới nhất: ${data.tintuc}\n` +
-		`Dữ liệu được cập nhật vào: ${data.updatedAt}`,
-		event.threadID, event.messageID
-	  );
-    }
+		if (contentMessage.indexOf(`${prefix}covid`) == 0) {
+		    let input = contentMessage.slice(prefix.length + 6);
+		    if (!input) input = "Việt Nam";
+		    axios.get(encodeURI(`https://CoronaAPI.noname234.repl.co/corona/${input}`)).then(res => {
+		      if (res.status == 429) return api.sendMessage("Spam ít thôi", threadID, messageID);
+		      if (res.data.data == null) return api.sendMessage("Không tìm thấy quốc gia bạn nhập", threadID, messageID);
+		      let data = res.data.data;
+		      input = Object.keys(data)[1];
+		      let msg = `======COVID-19======\n- Thế giới:\n❯ Nhiễm: ${data.world.cases}\n❯ Tử vong: ${data.world.deaths}\n❯ Hồi phục: ${data.world.recovered}\n- ${input.toUpperCase()}:\n❯ Nhiễm: ${data[input].cases}\n❯ Tử vong: ${data[input].deaths}\n❯ Hồi phục: ${data[input].recovered}`;
+		      return api.sendMessage(msg, threadID, messageID);
+		    })
+		}
 
 		//chọn
 		if (contentMessage.indexOf(`${prefix}choose`) == 0) {
